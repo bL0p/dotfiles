@@ -1,38 +1,11 @@
-[alias]
-  a  = add
-  aa = add --all
-  ai = add -i
-  #########
-  b = branch -v
-  ba = branch -va
-  bd = branch -d
-  #########
-  c = commit
-  ca = commit -a
-  cam = commit --am
-  cd = commit --amend
-  cad = commit -a --amend
-  #########
-  co = checkout
-  cob = checkout -b
-  #########
-  d = diff
-  dl = difftool
-  #########
-  m = merge
-  ma = merge --abort
-  mc = merge --continue
-  ms = merge --skip
-  #########
-  st = status -s -b
-  #########
-  ls = log --pretty=oneline
 [color]
   ui = true
   diff = auto
   status = auto
   branch = auto
 [core]
+	excludesfile = $HOME/.gitignore_global
+	autocrlf = input
   editor = vim
 [init]
   templatedir = ~/.dotfiles/git/templates
@@ -43,10 +16,16 @@
 [merge]
   tool = vimdiff
 [user]
-  name = Hugo Correia
-  email = hfcorreia91@gmail.com
+  name = Bernardo Oliveira Pinto
+  email = bernardoopinto@gmail.com
 [difftool]
 	tool = vimdiff
 	prompt = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [push]
 	default = simple
