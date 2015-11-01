@@ -6,4 +6,4 @@ export LC_ALL=en_US.UTF-8
 export EDITOR="vim"
 
 # Define the default dev folder
-export DEV_DIR=$HOME/Development
+export DEV_DIR=$HOME/Documents/workspace
