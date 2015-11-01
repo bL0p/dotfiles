@@ -15,8 +15,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
 
-" Solarized colorscheme
-Plugin 'altercation/vim-colors-solarized'
+" Monokai colorscheme
+Plugin 'sickill/vim-monokai'
 
 " Status line
 Plugin 'itchyny/lightline.vim'
@@ -42,9 +42,6 @@ Plugin 'scrooloose/nerdtree'
 " Move quicker
 Plugin 'easymotion/vim-easymotion'
 
-" Add relative numbers
-Plugin 'myusuf3/numbers.vim'
-
 " Fix whitespace
 Plugin 'bronson/vim-trailing-whitespace'
 
@@ -62,6 +59,9 @@ Plugin 'pangloss/vim-javascript'
 
 " React
 Plugin 'mxw/vim-jsx'
+
+" Ruby
+Bundle 'vim-ruby/vim-ruby'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -137,8 +137,8 @@ set complete+=kspell
 " Enable syntax hl
 syntax on
 
-" Enable Solarized colorschem
-silent!  colorscheme solarized
+" Set colorscheme to monokai
+colorscheme monokai
 
 " Set background
 set background=dark
@@ -189,27 +189,15 @@ set softtabstop=2
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Define the map leader
-let mapleader = "\<Space>"
-
-" Stop using <esc>
-inoremap jk <esc>
-inoremap <esc> <nop>
-
-" Smart way to move btw. windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-
 " List Buffer
 map <leader>i mzgg=G`z<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'monokai',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ], ['ctrlpmark'] ],
       \   'right': [ [ 'lineinfo', 'percent'], [ 'bufferline' ] ]
