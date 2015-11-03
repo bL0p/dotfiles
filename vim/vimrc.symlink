@@ -137,9 +137,6 @@ set complete+=kspell
 " Enable syntax hl
 syntax on
 
-" Set colorscheme to monokai
-colorscheme monokai
-
 " Set background
 set background=dark
 
@@ -189,7 +186,7 @@ set softtabstop=2
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" List Buffer
+" Indent file
 map <leader>i mzgg=G`z<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -197,7 +194,7 @@ map <leader>i mzgg=G`z<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'monokai',
+      \ 'colorscheme': 'wombat',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ], ['ctrlpmark'] ],
       \   'right': [ [ 'lineinfo', 'percent'], [ 'bufferline' ] ]
@@ -318,3 +315,6 @@ let g:numbers_exclude = ['nerdtree']
 
 " React
 let g:jsx_ext_required = 0
+
+" Set colorscheme to monokai
+silent! colorscheme monokai
