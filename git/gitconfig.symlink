@@ -31,3 +31,4 @@
 	default = simple
 [cola]
 	fontdiff = Ubuntu Mono,10,-1,5,50,0,0,0,0,0
+	tabwidth = 2 

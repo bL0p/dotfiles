@@ -147,7 +147,7 @@ scriptencoding utf-8
 set t_Co=256
 
 if has("gui_running")
-  set guifont=Monaco
+  set guifont=Ubuntu\ Mono\ 10
   set guioptions-=T
   set guioptions-=m
   set guioptions-=r

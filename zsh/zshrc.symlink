@@ -41,4 +41,5 @@ done
 
 unset config_files
 
+export JRUBY_OPTS="-J-XX:+CMSClassUnloadingEnabled -J-XX:+UseConcMarkSweepGC -J-XX:+UseParNewGC -J-XX:PermSize=384m -J-XX:MaxPermSize=384m -J-Xms2048m -J-Xmx2048m -Xcompile.invokedynamic=false"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
