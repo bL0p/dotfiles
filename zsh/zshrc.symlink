@@ -10,7 +10,7 @@ export UPDATE_ZSH_DAYS=10
 ENABLE_CORRECTION="true"
 #
 # Oh-my-zsh plugins to load
-plugins=(git dotenv history-substring-search brew brew-cask colored-man gem npm yarn rvm)
+plugins=(git dotenv history-substring-search brew gem npm yarn rvm)
 
 # Plugins configurations
 ZSH_DOTENV_FILE=.dotenv
