@@ -4,7 +4,7 @@
   status = auto
   branch = auto
 [core]
-	excludesfile = $HOME/.gitignore_global
+	excludesfile = $HOME/.gitignore
 	autocrlf = input
   editor = vim
 [init]
@@ -16,19 +16,15 @@
 [merge]
   tool = vimdiff
 [user]
-  name = Bernardo Oliveira Pinto
-  email = bernardoopinto@gmail.com
+	name = Bernardo Oliveira Pinto
+	email = 
 [difftool]
 	tool = vimdiff
 	prompt = false
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [push]
 	default = simple
 [cola]
 	fontdiff = Ubuntu Mono,10,-1,5,50,0,0,0,0,0
 	tabwidth = 2 
+[commit]
+	template = /Users/bopinto/.stCommitMsg
