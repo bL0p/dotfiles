@@ -2,7 +2,7 @@
 alias c="clear"
 alias e="exit"
 
-alias myip="dig @ns1.google.com TXT o-o.myaddr.l.google.com +short -4"
+alias myip="curl https://checkip.amazonaws.com/"
 
 if [[ `uname` == 'Linux' ]]; then
   alias pbcopy='xclip -selection clipboard'
