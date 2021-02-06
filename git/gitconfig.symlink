@@ -28,3 +28,7 @@
 	tabwidth = 2 
 [commit]
 	template = /Users/bopinto/.stCommitMsg
+[http]
+	proxy = 
+[credential]
+	helper = osxkeychain
