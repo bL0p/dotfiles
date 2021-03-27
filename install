@@ -52,9 +52,14 @@ update_dotfiles () {
   done
 }
 
+install_submodules () {
+  info 'Installing git submodules'
+  $(git submodule update --init --recursive --remote)
+}
+
 update_submodules () {
   info 'Updating git submodules'
-  $(git submodule update --remote &> /dev/null)
+  $(git submodule update --recursive --remote)
 }
 
 run_install () {
@@ -68,7 +73,7 @@ run_install () {
   read action
 
   if [[ "$action" == "i" ]]; then
-    update_submodules
+    install_submodules
     info 'Installing Dotfiles'
     install_dotfiles
     info 'Installing Vim plugins'
