@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install -y zsh fzf openjdk-8-jdk openjdk-11-jdk php
+sudo apt install -y zsh fzf openjdk-8-jdk openjdk-11-jdk php systemd
 
 git clone https://github.com/jenv/jenv.git ~/.jenv
 jenv add /usr/lib/jvm/java-1.8.0-openjdk-amd64
