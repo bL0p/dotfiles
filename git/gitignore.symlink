@@ -353,9 +353,6 @@ sketch
 
 ### vscode ###
 .vscode/*
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,vscode,intellij+all,maven,java,node,react,eclipse,m2e
