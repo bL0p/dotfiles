@@ -54,12 +54,12 @@ update_dotfiles () {
 
 install_submodules () {
   info 'Installing git submodules'
-  $(git submodule update --init --recursive --remote)
+  git submodule update --init --recursive --remote
 }
 
 update_submodules () {
   info 'Updating git submodules'
-  $(git submodule update --recursive --remote)
+  git submodule update --recursive --remote
 }
 
 run_install () {

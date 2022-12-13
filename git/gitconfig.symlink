@@ -1,0 +1,8 @@
+[credential]
+	helper = osxkeychain
+
+[delta]
+	line-numbers = true
+	side-by-side = true
+[http]
+	postBuffer = 157286400
