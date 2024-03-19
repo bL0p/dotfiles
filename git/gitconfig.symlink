@@ -6,3 +6,9 @@
 	side-by-side = true
 [http]
 	postBuffer = 157286400
+[user]
+	name = Bernardo Oliveira Pinto
+[pull]
+	rebase = true
+[core]
+	autocrlf = input

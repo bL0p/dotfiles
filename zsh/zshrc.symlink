@@ -77,10 +77,15 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
+export PATH="$PATH:$HOME/Library/PackageManager/bin"
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# Alias
+alias podmachine_restart="podman machine stop && podman machine start"
 
