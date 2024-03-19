@@ -9,3 +9,4 @@ if [[ `uname` == 'Linux' && `uname -r` != "*microsoft-standard-WSL*" ]]; then
   alias pbpaste='xclip -selection clipboard -o'
 fi
 
+alias podmachine_restart="podman machine stop && podman machine start"
