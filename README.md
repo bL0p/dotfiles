@@ -2,7 +2,11 @@
 My dotfiles 
 
 # Usage
-This repo assumes zsh is installed in the system and is your default shell.
+This repo assumes you have the following installed:
+- zsh
+- jenv
+- fzf
+- sdkman
 
 1. Clone this repo into `~/.dotfiles`.
 2. `cd ~/.dotfiles`
